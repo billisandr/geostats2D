@@ -41,7 +41,7 @@
 %            by Hristopulos D. T. and Elogne S.N. (2007). Analytic
 %            properties and covariance functions for a new class of
 %            generalized gibbs random fields. IEEE Transactions on
-%            Information Theory, 53(12):4667–4679
+%            Information Theory, 53(12):4667â€“4679
 %
 %   EXAMPLE1:
 %
@@ -86,8 +86,8 @@ function [x,y,rf,Cxx]=randomfield(covmod,beta,nx,ny,flag)
 
 % Check number of model's parameters
 cmod = {'Gexp';'Gaus';'Sphe';'Mate';'Mate1/3';'Mate0.5';'Mate1.0';...
-    'Mate2.0';'Mate2.5';'Mate3.0';'Mate3.5';'Spar';'Spar1';'Spar2';...
-    'Spar3'};
+    'Mate1.5';'Mate2.0';'Mate2.5';'Mate3.0';'Mate3.5';'Spar';'Spar1';...
+    'Spar2';'Spar3'};
 npar0 = [6;5;5;6;5;5;5;5;5;5;5;5;6;6;5;6];
 npar = npar0(strcmp(covmod,cmod)==1,1);
 
